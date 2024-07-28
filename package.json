@@ -1,0 +1,19 @@
+{
+  "name": "my-vue-meta-frameowork",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nitropack dev",
+    "prepare": "nitropack prepare"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "h3": "^1.12.0",
+    "nitropack": "^2.9.7",
+    "vite": "^5.3.5",
+    "vue": "^3.4.34"
+  }
+}
