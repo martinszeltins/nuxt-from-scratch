@@ -8,6 +8,8 @@
     "dev": "node ./bin/cli.mjs dev"
   },
   "dependencies": {
+    "@vitejs/plugin-vue": "^5.1.1",
+    "rollup-plugin-vue": "^6.0.0",
     "vue": "^3.3.4"
   },
   "devDependencies": {

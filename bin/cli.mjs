@@ -1,6 +1,8 @@
 import mri from 'mri'
 import { resolve } from 'node:path'
 import { createServer } from 'vite'
+import vueRollup from 'rollup-plugin-vue'
+import vuePlugin from '@vitejs/plugin-vue'
 import { build, createDevServer, createNitro, prepare } from 'nitropack'
 import { defineEventHandler, defineLazyEventHandler, fromNodeMiddleware } from 'h3'
 
@@ -27,17 +29,17 @@ async function main() {
                         server: {
                             middlewareMode: true,
                         },
-                        resolve: {
-                            alias: {
-                                vue: 'vue/dist/vue.esm-bundler.js',
-                            },
-                        },
+                        plugins: [vuePlugin()],
                     })
 
                     return defineEventHandler(fromNodeMiddleware(devViteServer.middlewares))
                 }),
             },
         ],
+
+        rollupConfig: {
+            plugins: [ vueRollup() ]
+        }
     }
 
     if (command === 'dev') {
