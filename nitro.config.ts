@@ -1,5 +1,6 @@
 import { defineNitroConfig } from 'nitropack/config'
 import { createServer as createViteServer } from 'vite'
+import { defineLazyEventHandler, defineEventHandler, fromNodeMiddleware } from 'h3'
 
 export default defineNitroConfig({
     handlers: [
