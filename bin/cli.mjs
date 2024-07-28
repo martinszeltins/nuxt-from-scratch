@@ -15,7 +15,7 @@ async function main() {
         handlers: [
             {
                 route: '/**',
-                handler: './app/server.ts',
+                handler: './server.ts',
             },
         ],
 

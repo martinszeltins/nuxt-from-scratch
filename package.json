@@ -10,7 +10,8 @@
   "dependencies": {
     "@vitejs/plugin-vue": "^5.1.1",
     "rollup-plugin-vue": "^6.0.0",
-    "vue": "^3.3.4"
+    "vue": "^3.3.4",
+    "vue-router": "^4.4.0"
   },
   "devDependencies": {
     "h3": "^1.7.0",
