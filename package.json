@@ -1,19 +1,19 @@
 {
-  "name": "my-vue-meta-frameowork",
+  "name": "the-next-vue-framework",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": "true",
+  "description": "Nuxt from Scratch",
+  "license": "MIT",
   "scripts": {
-    "dev": "nitropack dev",
-    "prepare": "nitropack prepare"
+    "dev": "node ./bin/cli.mjs dev"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "h3": "^1.12.0",
-    "nitropack": "^2.9.7",
-    "vite": "^5.3.5",
-    "vue": "^3.4.34"
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "h3": "^1.7.0",
+    "mri": "^1.2.0",
+    "nitropack": "^2.4.1",
+    "vite": "^4.3.9"
   }
 }

@@ -1,8 +1,11 @@
-import { createSSRApp } from 'vue/dist/vue.esm-bundler.js'
+import { createSSRApp } from 'vue'
 
 const app = createSSRApp({
-    data: () => ({ count: 0 }),
-    template: `<h1>Hello, Vue</h1><button @click="count++">{{ count }}</button>`
+    data: () => ({ count: 1 }),
+    template: `
+        <h1>Hello, Vue!</h1>
+        <button @click="count++">{{ count }}</button>
+    `,
 })
 
 app.mount('#app')
